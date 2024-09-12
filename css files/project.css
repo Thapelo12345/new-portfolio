@@ -1,0 +1,129 @@
+#projects{
+ width: 97vw;
+ height: 60vh;
+ margin-bottom: 10%;
+ margin-left: 1%;
+
+}
+
+#project-header{
+    position: relative;
+    left: 37%;
+    transition-duration: .5s;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    width: max-content;
+    color: blue;
+    font-family: serif;
+    font-size: 2.3em;
+    background-image: linear-gradient(0deg, steelblue, lightcyan);
+    box-shadow: .1px 1px 20px cyan;
+    text-shadow: 2px 0px 0px cyan;
+}
+#project-header:hover{
+    transform: scale(1.1);
+}
+#projects-holder{
+    /* border: 1px solid red; */
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: .5%; 
+    top: 5%;
+    width: 96%;
+    height: 40vh;
+    padding-top: 2%;
+    padding-left: 3%;
+    background-image: linear-gradient(0deg, black, rgb(70, 66, 66), rgb(54, 53, 53));
+    perspective: 2500px;
+}
+
+.project-container{
+    width: 20%;
+    height: 30vh;
+    transition-duration: 1s;
+    margin-left: -7%;
+    border-radius: 10px;
+    transform: rotateY(50deg);
+}
+.project-container:hover{
+    bottom: 40%;
+    transform: rotateY(0) scale(1.6);
+    height: 70%;
+    z-index: 1;
+    box-shadow: 1px 1px 10px honeydew;
+
+    .project-images{
+        position: absolute;
+        height: 86%;
+        border-radius: 0;
+        z-index: 0;
+    }
+   
+    .view-more-buttons{
+        z-index: 1;
+        visibility: visible;
+    }
+}
+
+.project-title{
+    border: .1px solid cyan;
+    margin-top: 0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    color: blue;
+    background-image: linear-gradient(0deg, steelblue, aqua, lightgreen);
+    box-shadow: 1px .1px 10px cyan;
+    text-shadow: 1px 0px 0px white;
+}
+.project-images{
+    transition-duration: 1s;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+.view-more-buttons{
+    position: absolute;
+    cursor: pointer;
+    border: .1px solid cyan;
+    transition-duration: .8s;
+    border-radius: 10px;
+    box-shadow: -.1px -1px 9px cyan;
+    background-image: linear-gradient(0deg, steelblue, lightcyan);
+    bottom: 1%;
+    left: 42%;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.view-more-button:hover{
+    transform: scale(1.2);
+}
+
+.project-links{
+    text-decoration: none;
+    font-size: 1em;
+    color: blue;
+}
+
+#project-description{
+    position: relative;
+    left: 18%;
+    /* border: 1px solid white; */
+    width: 55%;
+    height: 67%;
+    z-index: 0;
+}
+
+.paragraphs{
+    color: white;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 0px 5px cyan;
+}
